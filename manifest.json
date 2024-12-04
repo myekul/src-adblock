@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "SRC Adblock",
+    "version": "1.0",
+    "description": "A simple speedrun.com adblocker",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.speedrun.com/*"
+            ],
+            "js": [
+                "main.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "icons": {
+        "48": "icon.png"
+    }
+}

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "cuphead-memphis";
+    src: url("cuphead-memphis.ttf") format("truetype");
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #ffcf10;
+    font-family: 'cuphead-memphis';
+    font-size: 20px
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: middle;
+    gap: 5px
+}
+
+img {
+    width: 48px;
+    height: auto
+}
+
+#myekul {
+    filter: drop-shadow(0.5px 0 0 black)
+        /* Right shadow */
+        drop-shadow(-0.5px 0 0 black)
+        /* Left shadow */
+        drop-shadow(0 0.5px 0 black)
+        /* Bottom shadow */
+        drop-shadow(0 -0.5px 0 black);
+    padding: 0
+}
+
+.clickable:hover {
+    opacity: 0.5
+}
+
+.clickable:active {
+    opacity: 0.2
+}
